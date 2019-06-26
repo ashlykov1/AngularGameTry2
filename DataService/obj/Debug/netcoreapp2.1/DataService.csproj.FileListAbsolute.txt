@@ -1,0 +1,14 @@
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.csprojAssemblyReference.cache
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.csproj.CoreCompileInputs.cache
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.RazorAssemblyInfo.cache
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\bin\Debug\netcoreapp2.1\DataService.deps.json
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\bin\Debug\netcoreapp2.1\DataService.runtimeconfig.json
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\bin\Debug\netcoreapp2.1\DataService.runtimeconfig.dev.json
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\bin\Debug\netcoreapp2.1\DataService.dll
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\bin\Debug\netcoreapp2.1\DataService.pdb
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.RazorAssemblyInfo.cs
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.AssemblyInfoInputs.cache
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.AssemblyInfo.cs
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.RazorTargetAssemblyInfo.cache
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.dll
+C:\Users\q1021486\source\repos\SandBox\try2\DataService\DataService\obj\Debug\netcoreapp2.1\DataService.pdb

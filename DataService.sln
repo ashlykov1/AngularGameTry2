@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{0D86A08D-7763-4281-9189-129AB9C3EDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{A1405F28-8CA3-42F0-B872-EF0DF29FAB2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D86A08D-7763-4281-9189-129AB9C3EDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D86A08D-7763-4281-9189-129AB9C3EDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D86A08D-7763-4281-9189-129AB9C3EDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D86A08D-7763-4281-9189-129AB9C3EDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1405F28-8CA3-42F0-B872-EF0DF29FAB2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1405F28-8CA3-42F0-B872-EF0DF29FAB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1405F28-8CA3-42F0-B872-EF0DF29FAB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1405F28-8CA3-42F0-B872-EF0DF29FAB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40513100-D224-4FF2-BCF2-F128CB09E894}
+	EndGlobalSection
+EndGlobal
