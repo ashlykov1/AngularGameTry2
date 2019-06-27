@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MygridComponent } from './mygrid/mygrid.component';
+import { MyclassdataService } from './lib/myclassdata.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { MygridComponent } from './mygrid/mygrid.component';
       { path: 'mygrid', component: MygridComponent},
     ])
   ],
-  providers: [],
+  providers: [MyclassdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

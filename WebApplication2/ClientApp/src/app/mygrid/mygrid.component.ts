@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MyclassdataService } from '../lib/myclassdata.service';
+import { MyClass} from '../lib/library'
 @Component({
   selector: 'app-mygrid',
   templateUrl: './mygrid.component.html',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MygridComponent implements OnInit {
 
-  constructor() { }
+  service: MyclassdataService;
+  data: MyClass[]; 
 
-  ngOnInit() {
+  constructor(service: MyclassdataService) {
+    this.service = service;
+    this.getData(); 
   }
 
+  ngOnInit() {
+    console.log("init");
+  }
+
+  public getData() {
+    this.service.getData().subscribe(
+      data => {
+        this.data = data;
+      },
+      error => console.log(error)
+    );
+  }
 }
