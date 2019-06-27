@@ -1,3 +1,23 @@
+<table class="table" *ngIf="data">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of data" (click)="edit(d)">
+      <td>{{d.id}}</td>
+      <td>{{d.name}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-current-edit *ngIf="currentDatum" [currentDatum]="currentDatum" >
+  
+</app-current-edit>
+
 <p>
-  mygrid works!
+  <button (click)="save()">Save</button>
 </p>

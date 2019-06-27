@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MygridComponent } from './mygrid/mygrid.component';
 import { MyclassdataService } from './lib/myclassdata.service';
+import { CurrentEditComponent } from './current-edit/current-edit.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MyclassdataService } from './lib/myclassdata.service';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    MygridComponent
+    MygridComponent,
+    CurrentEditComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -10,6 +10,7 @@ export class MygridComponent implements OnInit {
 
   service: MyclassdataService;
   data: MyClass[]; 
+  currentDatum: MyClass;
 
   constructor(service: MyclassdataService) {
     this.service = service;
@@ -19,6 +20,9 @@ export class MygridComponent implements OnInit {
   ngOnInit() {
     console.log("init");
   }
+  public edit(datum: MyClass) {
+    this.currentDatum = datum;
+  }
 
   public getData() {
     this.service.getData().subscribe(
@@ -27,5 +31,13 @@ export class MygridComponent implements OnInit {
       },
       error => console.log(error)
     );
+  }
+
+  public save() {
+    this.service.save(this.data).subscribe(
+      updated => {
+        this.data = updated;
+      },
+      err => console.log(err));
   }
 }

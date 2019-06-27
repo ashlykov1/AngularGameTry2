@@ -1,0 +1,12 @@
+div > span {
+  display: block;
+  width: 200px;
+}
+
+  div > span > label {
+    width: 50px;
+  }
+
+  div > span > input {
+    width: 100px;
+  }
