@@ -1,6 +1,6 @@
 class MyClass {
-  public Id: number;
-  public Name: string;
+  public id: number;
+  public name: string;
 }
 
 export { MyClass}

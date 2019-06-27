@@ -25,24 +25,31 @@ namespace DataService.Controllers
             (IEnumerable<MyClass> classes,
              IEnumerable<int> delete)
         {
-            foreach (var c in classes)
+            try
             {
-                var ent = await context.MyClasses.SingleOrDefaultAsync(e => e.Id == c.Id);
+                foreach (var c in classes)
+                {
+                    var ent = await context.MyClasses.SingleOrDefaultAsync(e => e.Id == c.Id);
 
-                if (ent == null)
-                {
-                    context.MyClasses.Attach(ent);
+                    if (ent == null)
+                    {
+                        context.MyClasses.Attach(c);
+                    }
+                    else
+                    {
+                        ent.Name = c.Name;
+                    }
                 }
-                else
-                {
-                    ent.Name = c.Name;
-                }
+                this.context.MyClasses.RemoveRange(
+                    await this.context.MyClasses.Where(e => delete.Contains(e.Id)).ToListAsync());
+                await this.context.SaveChangesAsync();
+
+                return await this.context.MyClasses.ToListAsync();
             }
-            this.context.MyClasses.RemoveRange(
-                await this.context.MyClasses.Where(e => delete.Contains(e.Id)).ToListAsync());
-            await this.context.SaveChangesAsync();
-            
-            return await this.context.MyClasses.ToListAsync();
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

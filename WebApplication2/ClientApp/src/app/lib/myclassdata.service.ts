@@ -14,8 +14,8 @@ export class MyclassdataService {
     return this.client.get<MyClass[]>("https://localhost:44346/api/MyClasses");
   }
 
-  public save(data : MyClass[]) {
-    let dataToSubmit = { toSave: data, toDelete : [] };
+  public save(data : MyClass[], toDelete : number[]) {
+    let dataToSubmit = { toSave: data, toDelete : toDelete };
     return this.client.post<MyClass[]>("https://localhost:44346/api/MyClasses", dataToSubmit);
   }
 

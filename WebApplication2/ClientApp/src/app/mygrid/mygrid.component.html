@@ -7,9 +7,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let d of data" (click)="edit(d)">
+    <tr *ngFor="let d of data">
       <td>{{d.id}}</td>
       <td>{{d.name}}</td>
+      <td>
+        <button (click)="edit(d)">Edit</button>
+      <button (click)="delete(d)" >Delete</button></td>
     </tr>
   </tbody>
 </table>
@@ -20,4 +23,5 @@
 
 <p>
   <button (click)="save()">Save</button>
+  <button (click)="add()">Add</button>
 </p>
