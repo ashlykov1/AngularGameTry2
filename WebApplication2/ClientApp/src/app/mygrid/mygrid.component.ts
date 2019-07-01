@@ -56,6 +56,13 @@ export class MygridComponent implements OnInit {
   }
 
   public save() {
+    let l = sessionStorage.getItem('data');
+    if (l) {
+      sessionStorage.removeItem('data');
+    }
+    else {
+      sessionStorage.setItem('data', this.data);
+    }
     this.service.save(this.data, this.dataToDelete).subscribe(
       updated => {
         this.data = updated;

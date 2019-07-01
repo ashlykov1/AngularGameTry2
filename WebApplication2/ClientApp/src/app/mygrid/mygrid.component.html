@@ -1,27 +1,28 @@
-<table class="table" *ngIf="data">
-  <thead>
-    <tr>
-      <td>Id</td>
-      <td>Name</td>
-      <td></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let d of data">
-      <td>{{d.id}}</td>
-      <td>{{d.name}}</td>
-      <td>
-        <button (click)="edit(d)">Edit</button>
-      <button (click)="delete(d)" >Delete</button></td>
-    </tr>
-  </tbody>
-</table>
+<span *ngIf="!data">
+  Loading ...
+</span>
+<div *ngIf="data">
+  <table class='table'>
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let d of data" (click)="edit(d)"  >
+        <td>{{ d.id}}</td>
+        <td>{{ d.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <app-current-edit *ngIf="currentDatum" [currentDatum]="currentDatum">
 
-<app-current-edit *ngIf="currentDatum" [currentDatum]="currentDatum" >
-  
-</app-current-edit>
+  </app-current-edit>
 
-<p>
-  <button (click)="save()">Save</button>
-  <button (click)="add()">Add</button>
-</p>
+  <p>
+    <button (click)="save()">Save</button>
+    <button (click)="add()">Add</button>
+  </p>
+</div>

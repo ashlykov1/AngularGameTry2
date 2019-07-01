@@ -1,0 +1,12 @@
+.row  :hover {
+  background-color:lightblue;
+}
+.selected {
+  background-color:grey;
+}
+
+.selected :hover {
+  color:springgreen;
+
+}
+
